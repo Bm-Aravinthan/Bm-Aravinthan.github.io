@@ -260,6 +260,10 @@ footer {
     background-color: var(--dark2);
 }
 
+.social{
+    text-decoration: none;
+    color: var(--body);
+}
 
 
 
