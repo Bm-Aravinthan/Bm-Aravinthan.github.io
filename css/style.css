@@ -326,6 +326,10 @@ footer {
         text-align: center;
     }
 
+    .education-font-size{
+        font-size: 17px;
+    }
+
     #contact .center{
         position: relative;
         left: 50%;
