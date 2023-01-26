@@ -30,8 +30,8 @@ img {
 }
 
 section {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 /* Navbar */
@@ -112,7 +112,12 @@ section {
     border-color: var(--brand);
 }
 
-.btn-brand:hover {
+.btn-brand-study {
+    background-color: var(--brand);
+    border-color: var(--brand);
+}
+
+.btn-brand:hover, .btn-brand-study:hover {
     background-color: transparent;
     color: var(--brand);
 }
@@ -281,4 +286,73 @@ footer {
 /* modal */
 .modal h2 {
     color: var(--dark1);
+}
+
+
+
+
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    #about .person-is-new span {
+        font-weight: 400;
+        /* letter-spacing: 1px; */
+        font-size: 10px;
+        /* color: var(--white);
+        margin-right: 8px;
+        text-transform: uppercase; */
+    }
+
+    .footer-font{
+        font-size: 14px;
+    }
+
+    .btn-brand-study {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    /* .hello {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+    } */
+
+    .section-centering{
+        text-align: center;
+    }
+
+    #contact .center{
+        position: relative;
+        left: 50%;
+        display: inline-block;
+        transform: translateX(-50%);
+    }
+
+    footer .center{
+        position: relative;
+        left: 50%;
+        display: inline-block;
+        transform: translateX(-50%);
+    }
+
+    #my-form-status{
+        color: #ed9902;
+        text-align: center;
+    }
+
+    #reviews .review .center{
+        position: relative;
+        left: 50%;
+        display: inline-block;
+        transform: translateX(-50%);
+
+        /* position: relative;
+        left: 50%;
+        transform: translateX(-50%); */
+    }
 }
